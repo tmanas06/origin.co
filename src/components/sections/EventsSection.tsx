@@ -35,9 +35,18 @@ export default function EventsSection() {
           </p>
         </div>
 
+        {/* Mobile Swipe Hint */}
+        <div className="flex items-center justify-between mb-3 md:hidden text-xs text-offwhite/50 font-body">
+          <span className="flex items-center gap-1.5">
+            <span className="w-1.5 h-1.5 rounded-full bg-purple-400 animate-pulse" />
+            Swipe to explore ({EVENTS.length} events)
+          </span>
+          <span className="text-purple-400 font-mono font-bold tracking-wider">&rarr;</span>
+        </div>
+
         {/* Horizontal scroll gallery */}
-        <div className="scroll-x-container -mx-6 px-6 md:-mx-12 md:px-12 lg:-mx-16 lg:px-16">
-          <div className="flex gap-5 pb-4" style={{ width: 'max-content' }}>
+        <div className="scroll-x-container -mx-6 px-6 md:-mx-12 md:px-12 lg:-mx-16 lg:px-16 pb-3">
+          <div className="flex gap-4 sm:gap-5 pb-3" style={{ width: 'max-content' }}>
             {EVENTS.map((event, i) => (
               <EventCard key={event.id} event={event} index={i} />
             ))}
@@ -45,7 +54,7 @@ export default function EventsSection() {
         </div>
       </div>
 
-      <div className="divider mt-24 max-w-7xl mx-auto px-6 md:px-12 lg:px-16" />
+      <div className="divider mt-16 md:mt-24 max-w-7xl mx-auto px-6 md:px-12 lg:px-16" />
     </section>
   )
 }
@@ -56,7 +65,7 @@ function EventCard({ event, index }: { event: typeof EVENTS[0]; index: number })
   return (
     <motion.div
       ref={ref}
-      className="relative flex-shrink-0 w-72 md:w-80 h-96 rounded-2xl overflow-hidden cursor-pointer group"
+      className="relative flex-shrink-0 w-[270px] sm:w-80 h-[380px] sm:h-96 rounded-2xl overflow-hidden cursor-pointer group snap-start"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-50px' }}
@@ -69,11 +78,11 @@ function EventCard({ event, index }: { event: typeof EVENTS[0]; index: number })
         alt={event.title}
         fill
         className="object-cover transition-transform duration-700 group-hover:scale-110"
-        sizes="(max-width: 768px) 288px, 320px"
+        sizes="(max-width: 768px) 270px, 320px"
       />
 
       {/* Dark gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent" />
 
       {/* Purple hover overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-violet-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -86,13 +95,13 @@ function EventCard({ event, index }: { event: typeof EVENTS[0]; index: number })
       </div>
 
       {/* Bottom: Content */}
-      <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+      <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6 translate-y-0 md:translate-y-2 md:group-hover:translate-y-0 transition-transform duration-300">
         <h3 className="font-display text-xl font-black uppercase text-offwhite leading-tight mb-2">
           {event.title}
         </h3>
-        <div className="flex flex-col gap-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
-          <p className="text-sm text-purple-300 font-body">{event.date}</p>
-          <p className="text-xs text-offwhite/60 font-body flex items-center gap-1">
+        <div className="flex flex-col gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 delay-100">
+          <p className="text-sm text-purple-300 font-body font-medium">{event.date}</p>
+          <p className="text-xs text-offwhite/70 font-body flex items-center gap-1">
             <span>📍</span> {event.venue}
           </p>
         </div>

@@ -31,11 +31,22 @@ export default function Navbar() {
     }
   }
 
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [menuOpen])
+
   return (
     <motion.header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
-          ? 'py-3 bg-black/70 backdrop-blur-xl border-b border-white/5 shadow-lg shadow-black/20'
+        scrolled || menuOpen
+          ? 'py-3 bg-black/85 backdrop-blur-xl border-b border-white/5 shadow-lg shadow-black/20'
           : 'py-5 bg-transparent'
       }`}
       initial={{ y: -80, opacity: 0 }}
@@ -106,13 +117,13 @@ export default function Navbar() {
         animate={{ height: menuOpen ? 'auto' : 0 }}
         transition={{ duration: 0.35, ease: 'easeInOut' }}
       >
-        <div className="bg-black/90 backdrop-blur-xl border-t border-white/5 px-6 py-6 flex flex-col gap-3">
+        <div className="bg-black/98 backdrop-blur-2xl border-t border-white/10 px-6 py-6 flex flex-col gap-3 shadow-2xl">
           {NAV_LINKS.map((link) => (
             <a
               key={link.label}
               href={link.href}
               onClick={(e) => handleNavClick(e, link.href)}
-              className="py-3 text-base font-body font-medium text-offwhite/70 hover:text-purple-400 border-b border-white/5 last:border-0 transition-colors"
+              className="py-3 text-base font-body font-medium text-offwhite/80 hover:text-purple-400 border-b border-white/5 last:border-0 transition-colors"
             >
               {link.label}
             </a>
@@ -121,10 +132,10 @@ export default function Navbar() {
             href={WHATSAPP_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-2 text-center py-3.5 rounded-full font-body font-semibold text-sm uppercase
-              bg-gradient-to-r from-violet-600 to-purple-500 text-white"
+            className="mt-3 text-center py-3.5 rounded-full font-body font-semibold text-sm uppercase
+              bg-gradient-to-r from-violet-600 to-purple-500 text-white shadow-glow-violet"
           >
-            Join Community
+            Join Community ↗
           </a>
         </div>
       </motion.div>

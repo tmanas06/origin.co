@@ -40,8 +40,8 @@ export default function BrandCollabs() {
         {/* Marquee */}
         <div className="relative mb-20">
           {/* Fade edges */}
-          <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
+          <div className="absolute left-0 top-0 bottom-0 w-10 sm:w-24 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-10 sm:w-24 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
 
           <div className="py-6 border-y border-offwhite/8">
             <Marquee items={logoItems} speed={25} />

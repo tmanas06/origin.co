@@ -182,7 +182,7 @@ export default function ProcessSection() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-14 glass rounded-2xl p-6 border border-white/10 flex flex-col md:flex-row items-center justify-between gap-6"
         >
-          <div className="flex flex-wrap items-center gap-2 md:gap-3 text-sm font-display font-black uppercase text-offwhite tracking-wider">
+          <div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-3 text-xs sm:text-sm font-display font-black uppercase text-offwhite tracking-wider text-center">
             <span>Brand</span>
             <span className="text-purple-400">&rarr;</span>
             <span>Origin</span>
@@ -196,7 +196,7 @@ export default function ProcessSection() {
 
           <a
             href="#join"
-            className="px-6 py-2.5 rounded-full text-xs font-body font-bold uppercase tracking-wider bg-white/5 hover:bg-purple-600/30 border border-purple-500/40 text-offwhite hover:text-purple-300 transition-all duration-300"
+            className="w-full sm:w-auto text-center px-6 py-3 rounded-full text-xs font-body font-bold uppercase tracking-wider bg-white/5 hover:bg-purple-600/30 border border-purple-500/40 text-offwhite hover:text-purple-300 transition-all duration-300"
           >
             Start Your Campaign &rarr;
           </a>

@@ -154,7 +154,7 @@ export default function HeroSection() {
 
           {/* Stat pills */}
           <motion.div
-            className="flex gap-6 flex-wrap"
+            className="grid grid-cols-3 gap-3 sm:gap-6 pt-2 max-w-md"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 1.4 }}
@@ -165,8 +165,8 @@ export default function HeroSection() {
               { value: '15+', label: 'Brand Partners' },
             ].map((s) => (
               <div key={s.label} className="flex flex-col">
-                <span className="text-2xl font-black font-display gradient-text-purple">{s.value}</span>
-                <span className="text-xs text-offwhite/40 font-body tracking-wider uppercase">{s.label}</span>
+                <span className="text-xl sm:text-2xl font-black font-display gradient-text-purple">{s.value}</span>
+                <span className="text-[11px] sm:text-xs text-offwhite/40 font-body tracking-wider uppercase">{s.label}</span>
               </div>
             ))}
           </motion.div>
@@ -174,12 +174,12 @@ export default function HeroSection() {
 
         {/* RIGHT — 3D Torus */}
         <motion.div
-          className="lg:col-span-5 relative w-full flex items-center justify-center"
+          className="lg:col-span-5 relative w-full flex items-center justify-center my-4 lg:my-0"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
         >
-          <div className="relative w-full max-w-[440px] lg:max-w-[480px] aspect-square flex items-center justify-center">
+          <div className="relative w-full max-w-[220px] sm:max-w-[300px] lg:max-w-[480px] aspect-square flex items-center justify-center">
             {mounted && (
               isMobile ? (
                 <MobileFallback />

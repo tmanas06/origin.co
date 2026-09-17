@@ -28,8 +28,8 @@ function FounderBlock({
     >
       {/* Image Column */}
       <div
-        className={`relative h-[520px] md:h-[620px] rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-purple-950/30 ${
-          isEven ? 'order-2 lg:order-1' : 'order-2 lg:order-2'
+        className={`relative h-[380px] sm:h-[460px] md:h-[540px] lg:h-[620px] rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-purple-950/30 ${
+          isEven ? 'order-1 lg:order-1' : 'order-1 lg:order-2'
         }`}
       >
         {/* Subtle violet ambient glow */}
@@ -53,10 +53,10 @@ function FounderBlock({
         <div className="absolute bottom-0 inset-x-0 h-2/5 bg-gradient-to-t from-black/85 via-black/45 to-transparent z-10 pointer-events-none" />
 
         {/* Name badge */}
-        <div className="absolute bottom-6 left-6 z-20">
-          <div className="glass rounded-2xl px-5 py-3.5 border border-white/10 backdrop-blur-xl shadow-lg">
+        <div className="absolute bottom-4 left-4 right-4 sm:right-auto sm:bottom-6 sm:left-6 z-20">
+          <div className="glass rounded-2xl px-4 py-3 sm:px-5 sm:py-3.5 border border-white/10 backdrop-blur-xl shadow-lg">
             <div className="flex items-center gap-2">
-              <p className="font-display text-lg font-black uppercase text-offwhite tracking-wide">
+              <p className="font-display text-base sm:text-lg font-black uppercase text-offwhite tracking-wide">
                 {founder.name}
               </p>
               <span
@@ -85,8 +85,8 @@ function FounderBlock({
 
       {/* Bio Column */}
       <div
-        className={`flex flex-col gap-7 ${
-          isEven ? 'order-1 lg:order-2' : 'order-1 lg:order-1'
+        className={`flex flex-col gap-6 sm:gap-7 ${
+          isEven ? 'order-2 lg:order-2' : 'order-2 lg:order-1'
         }`}
       >
         <motion.div
@@ -98,7 +98,7 @@ function FounderBlock({
           <span className="text-xs font-semibold tracking-widest text-purple-400 uppercase font-mono mb-2 block">
             {founder.eyebrow}
           </span>
-          <h2 className="font-display text-4xl md:text-5xl font-black uppercase tracking-tight text-offwhite leading-tight">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-tight text-offwhite leading-tight">
             {founder.headlinePrefix}
             <span className="gradient-text">{founder.headlineGradient}</span>
           </h2>
@@ -106,13 +106,13 @@ function FounderBlock({
 
         {/* Pull quote */}
         <motion.blockquote
-          className="border-l-2 border-purple-500 pl-6 py-1 bg-purple-950/10 rounded-r-2xl"
+          className="border-l-2 border-purple-500 pl-4 sm:pl-6 py-1 bg-purple-950/10 rounded-r-2xl"
           initial={{ opacity: 0, x: isEven ? -20 : 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.15 }}
         >
-          <p className="text-offwhite/90 font-body text-lg italic leading-relaxed">
+          <p className="text-offwhite/90 font-body text-base sm:text-lg italic leading-relaxed">
             &ldquo;{founder.quote}&rdquo;
           </p>
           <footer className="mt-2 text-xs text-purple-400 font-body font-semibold uppercase tracking-wider not-italic">
@@ -122,7 +122,7 @@ function FounderBlock({
 
         {/* Bio paragraphs */}
         <motion.div
-          className="flex flex-col gap-4 text-offwhite/70 font-body text-base leading-relaxed"
+          className="flex flex-col gap-3.5 sm:gap-4 text-offwhite/70 font-body text-sm sm:text-base leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -135,7 +135,7 @@ function FounderBlock({
 
         {/* Pillars */}
         <motion.div
-          className="grid grid-cols-2 gap-3 pt-2"
+          className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2"
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

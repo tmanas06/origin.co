@@ -16,12 +16,15 @@ export function useLenis() {
         const Lenis = LenisModule.default ?? (LenisModule as any).Lenis ?? LenisModule
         if (!Lenis) return
 
+        const isTouch = typeof window !== 'undefined' && ('ontouchstart' in window || navigator.maxTouchPoints > 0)
+
         lenis = new Lenis({
-          duration: 1.2,
+          duration: isTouch ? 0.8 : 1.2,
           easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
           orientation: 'vertical',
           smoothWheel: true,
-          touchMultiplier: 2,
+          syncTouch: false,
+          touchMultiplier: 1,
         })
 
         lenisRef.current = lenis
