@@ -78,7 +78,7 @@ export default function HeroSection() {
           >
             <div className="h-px w-8 bg-purple-400" />
             <span className="text-xs tracking-[0.3em] uppercase text-purple-400 font-body">
-              Mumbai, India · Est. 2023
+              Mumbai, India · Est. 2026
             </span>
           </motion.div>
 

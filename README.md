@@ -2,7 +2,7 @@
 
 > **"Not Just A Community. It's Our Origin."**
 
-Premium dark-themed marketing website for **Origin.Co**, a Mumbai-based creator community and brand-creator collaboration agency founded by Piyush Mahadik.
+Premium dark-themed marketing website for **Origin.Co**, a Mumbai-based creator community and brand-creator collaboration agency founded by Piyush Mahadik and Sonakshi Doshi.
 
 ---
 
@@ -181,10 +181,10 @@ npx firebase deploy --only hosting
 
 ## 👤 About Origin.Co
 
-**Origin.Co** is a Mumbai-based creator community and brand-creator collaboration agency founded by **Piyush Mahadik** in 2023. Origin connects brands with vetted content creators and runs exclusive IRL events — workshops, padel tournaments, night cycling rides, and more.
+**Origin.Co** is a Mumbai-based creator community and brand-creator collaboration agency founded by **Piyush Mahadik** in 2026. Origin connects brands with vetted content creators and runs exclusive IRL events — workshops, padel tournaments, night cycling rides, and more.
 
 > *Build. Connect. Grow.*
 
 ---
 
-*Built with purpose in Mumbai. © 2024 Origin.Co*
+*Built with purpose in Mumbai. 2026 Origin.Co*

@@ -95,7 +95,7 @@ export default function Footer() {
         {/* Bottom row */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-offwhite/30 font-body">
-            © 2024 Origin.Co · All rights reserved · Mumbai, India
+            © 2026 Origin.Co · All rights reserved · Mumbai, India
           </p>
 
           {/* Social icons */}

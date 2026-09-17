@@ -26,7 +26,7 @@ export const EVENTS = [
   {
     id: 1,
     title: 'Bedazzle Workshop',
-    date: 'Aug 2024',
+    date: 'Aug 2026',
     venue: 'Lower Parel, Mumbai',
     image: '/images/events/bedazzle.jpg',
     tag: 'Workshop',
@@ -34,7 +34,7 @@ export const EVENTS = [
   {
     id: 2,
     title: 'Ride the Night',
-    date: 'Jul 2024',
+    date: 'Jul 2026',
     venue: 'Bandra–Worli Sea Link',
     image: '/images/events/night-ride.jpg',
     tag: 'Cycling',
@@ -42,7 +42,7 @@ export const EVENTS = [
   {
     id: 3,
     title: 'Padel Meetup',
-    date: 'Jun 2024',
+    date: 'Jun 2026',
     venue: 'Juhu, Mumbai',
     image: '/images/events/padel.jpg',
     tag: 'Sports',
@@ -50,7 +50,7 @@ export const EVENTS = [
   {
     id: 4,
     title: 'Creator Mixer',
-    date: 'May 2024',
+    date: 'May 2026',
     venue: 'Colaba, Mumbai',
     image: '/images/events/mixer.jpg',
     tag: 'Networking',
@@ -58,7 +58,7 @@ export const EVENTS = [
   {
     id: 5,
     title: 'Brand Collab Sprint',
-    date: 'Apr 2024',
+    date: 'Apr 2026',
     venue: 'BKC, Mumbai',
     image: '/images/events/sprint.jpg',
     tag: 'Workshop',
@@ -134,3 +134,65 @@ export const BRAND_FEATURES = [
     description: 'Full-funnel reporting on reach, engagement, conversions and brand sentiment — every campaign.',
   },
 ]
+
+export const FOUNDERS = [
+  {
+    id: 'piyush',
+    name: 'Piyush Mahadik',
+    role: 'Founder',
+    roleBadge: 'Founder',
+    badgeClass: 'bg-purple-500/25 text-purple-300 border-purple-500/40',
+    tagline: 'Building the foundation',
+    handle: '@piyuush_16',
+    instagram: 'https://instagram.com/piyuush_16',
+    image: '/images/founder-hd.jpg',
+    imageAlt: 'Piyush Mahadik — Founder of Origin',
+    eyebrow: 'Visionary & Builder',
+    headlinePrefix: 'Built with vision. ',
+    headlineGradient: 'Driven by purpose.',
+    quote: 'Different roles. Same passion. One journey. This is just the beginning. This is Origin.',
+    quoteAuthor: '— Piyush Mahadik, Founder',
+    bio: [
+      'Piyush Mahadik founded Origin with a core conviction: authentic creator ecosystems produce transformative storytelling, higher engagement, and sustainable brand impact.',
+      'Turning ideas into impact, one step at a time — Origin bridges top-tier digital talent with forward-thinking brands through strategy, community trust, and end-to-end execution.',
+    ],
+    pillars: [
+      { title: 'Vision & Strategy', description: 'Turning bold vision into actionable, scalable strategy.' },
+      { title: 'Ideas into Impact', description: 'Ideas are just the start — measurable impact is the goal.' },
+    ],
+    socialLinks: [
+      { label: '@piyuush_16', href: 'https://instagram.com/piyuush_16', primary: true },
+      { label: '@origincommune', href: 'https://instagram.com/origincommune', primary: false },
+    ],
+  },
+  {
+    id: 'sonakshi',
+    name: 'Sonakshi Doshi',
+    role: 'Co-Founder',
+    roleBadge: 'Co-Founder',
+    badgeClass: 'bg-violet-500/25 text-violet-300 border-violet-500/40',
+    tagline: 'Community & Creator Lead',
+    handle: '@sonakshidoshi5',
+    instagram: 'https://instagram.com/sonakshidoshi5',
+    image: '/images/sonakshi-doshi.jpg',
+    imageAlt: 'Sonakshi Doshi — Co-Founder of Origin',
+    eyebrow: 'Creator & Community Lead',
+    headlinePrefix: 'Empowering creators. ',
+    headlineGradient: 'Shaping culture.',
+    quote: 'Creators aren’t just making content — they’re shaping culture. Origin is where their voice finds its biggest stage and real community.',
+    quoteAuthor: '— Sonakshi Doshi, Co-Founder',
+    bio: [
+      'Sonakshi Doshi co-founded Origin to cultivate an authentic, thriving home for Mumbai’s creator community, focusing on creative direction, hands-on workshops, and creator-first culture.',
+      'As a passionate reel creator and influencer herself, she drives creator curation, community events, and brand partnerships that resonate deeply with real audiences.',
+    ],
+    pillars: [
+      { title: 'Community & Culture', description: 'Fostering genuine, IRL connections and high-engagement creator communities.' },
+      { title: 'Creative Direction', description: 'Curating dynamic workshops, experiential events, and impactful storytelling.' },
+    ],
+    socialLinks: [
+      { label: '@sonakshidoshi5', href: 'https://instagram.com/sonakshidoshi5', primary: true },
+      { label: '@origincommune', href: 'https://instagram.com/origincommune', primary: false },
+    ],
+  },
+]
+
