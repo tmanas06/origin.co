@@ -179,15 +179,11 @@ export default function HeroSection() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
         >
-          <div className="relative w-full max-w-[220px] sm:max-w-[300px] lg:max-w-[480px] aspect-square flex items-center justify-center">
+          <div className="relative w-full max-w-[280px] sm:max-w-[340px] lg:max-w-[480px] aspect-square flex items-center justify-center">
             {mounted && (
-              isMobile ? (
-                <MobileFallback />
-              ) : (
-                <ErrorBoundary fallback={<MobileFallback />}>
-                  <TorusScene />
-                </ErrorBoundary>
-              )
+              <ErrorBoundary fallback={<MobileFallback />}>
+                <TorusScene />
+              </ErrorBoundary>
             )}
           </div>
         </motion.div>

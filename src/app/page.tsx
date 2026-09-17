@@ -8,6 +8,7 @@ import BrandCollabs from '@/components/sections/BrandCollabs'
 import StatsBar from '@/components/sections/StatsBar'
 import FounderSection from '@/components/sections/FounderSection'
 import JoinCTA from '@/components/sections/JoinCTA'
+import MobileToast from '@/components/ui/MobileToast'
 
 export default function HomePage() {
   return (
@@ -22,6 +23,7 @@ export default function HomePage() {
       <FounderSection />
       <JoinCTA />
       <Footer />
+      <MobileToast />
     </main>
   )
 }
