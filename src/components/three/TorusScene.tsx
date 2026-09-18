@@ -285,6 +285,7 @@ function LuxuryRingBody() {
       metalness: 0.96,
       roughness: 0.1,
       envMapIntensity: 2.0,
+      side: THREE.DoubleSide,
     })
   }, [])
 
@@ -296,7 +297,7 @@ function LuxuryRingBody() {
       </mesh>
 
       {/* Outer Rim Bevel Edge */}
-      <mesh position={[0, 0, 0.02]} material={platinumMaterial}>
+      <mesh position={[0, 0, 0.02]} rotation={[Math.PI / 2, 0, 0]} material={platinumMaterial}>
         <cylinderGeometry args={[1.94, 1.94, 0.22, 128, 1, true]} />
       </mesh>
 
@@ -306,7 +307,7 @@ function LuxuryRingBody() {
       </mesh>
 
       {/* Inner Hole Bevel Edge */}
-      <mesh position={[0, 0, 0.02]} material={platinumMaterial}>
+      <mesh position={[0, 0, 0.02]} rotation={[Math.PI / 2, 0, 0]} material={platinumMaterial}>
         <cylinderGeometry args={[1.05, 1.05, 0.22, 128, 1, true]} />
       </mesh>
 
