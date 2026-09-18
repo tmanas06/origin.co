@@ -165,16 +165,31 @@ body::after {
 .marquee-track {
   display: flex;
   width: max-content;
-  animation: marquee 30s linear infinite;
+  animation: marquee 35s linear infinite;
 }
 
 .marquee-track:hover {
   animation-play-state: paused;
 }
 
+.marquee-track-reverse {
+  display: flex;
+  width: max-content;
+  animation: marquee-reverse 35s linear infinite;
+}
+
+.marquee-track-reverse:hover {
+  animation-play-state: paused;
+}
+
 @keyframes marquee {
   0%   { transform: translateX(0); }
   100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-reverse {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
 }
 
 /* ─── Animated Gradient Mesh ─────────────────────────────────── */
