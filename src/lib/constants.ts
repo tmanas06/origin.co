@@ -77,7 +77,7 @@ export const BRANDS = [
   { name: 'Provilac' },
   { name: 'Bunchh' },
   { name: 'Highdrate' },
-  { name: 'Cannon India' },
+  { name: 'Canon India' },
   { name: 'YTFF Mumbai' },
   { name: 'TNF Mumbai' },
   { name: 'TRCT.in' },
@@ -154,7 +154,7 @@ export const CASE_STUDIES = [
     creators: 12,
   },
   {
-    brand: 'Cannon India',
+    brand: 'Canon India',
     description: 'Hands-on cinematography creator labs, camera testing, and gear storytelling workshops across Mumbai creators.',
     stat: '950K',
     statLabel: 'Targeted Reach',
