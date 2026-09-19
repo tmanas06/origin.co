@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import GlassCard from '@/components/ui/GlassCard'
-import { CREATOR_FEATURES, BRAND_FEATURES } from '@/lib/constants'
+import { CREATOR_FEATURES, BRAND_FEATURES, INSTAGRAM_LINK } from '@/lib/constants'
 
 type Tab = 'creators' | 'brands'
 
@@ -52,13 +52,13 @@ export default function DualPositioning() {
       headline: 'Built for the creator.',
       sub: 'Join a community that puts your growth first — real opportunities, real people, real events.',
       cta: 'Join as a Creator',
-      href: 'https://wa.me/919999999999',
+      href: INSTAGRAM_LINK,
     },
     brands: {
       headline: 'Results-driven creator marketing.',
       sub: 'From strategy to content to conversions — we manage every touchpoint so you can focus on growth.',
       cta: 'Start a Campaign',
-      href: 'https://wa.me/919999999999?text=Brand+collab',
+      href: INSTAGRAM_LINK,
     },
   }
 

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import { NAV_LINKS, WHATSAPP_LINK } from '@/lib/constants'
+import { NAV_LINKS, INSTAGRAM_LINK } from '@/lib/constants'
 import OriginLogo from '@/components/ui/OriginLogo'
 
 export default function Navbar() {
@@ -77,7 +77,7 @@ export default function Navbar() {
         {/* CTA */}
         <div className="hidden md:flex items-center gap-3">
           <a
-            href={WHATSAPP_LINK}
+            href={INSTAGRAM_LINK}
             target="_blank"
             rel="noopener noreferrer"
             id="nav-cta"
@@ -129,7 +129,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href={WHATSAPP_LINK}
+            href={INSTAGRAM_LINK}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-3 text-center py-3.5 rounded-full font-body font-semibold text-sm uppercase

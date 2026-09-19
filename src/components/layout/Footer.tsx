@@ -49,12 +49,12 @@ export default function Footer() {
               </a>
             ))}
             <a
-              href={WHATSAPP_LINK}
+              href={INSTAGRAM_LINK}
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm font-body text-offwhite/50 hover:text-purple-400 transition-colors duration-200 w-fit"
             >
-              WhatsApp Community ↗
+              Instagram Community ↗
             </a>
           </div>
 

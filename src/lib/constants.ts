@@ -2,9 +2,10 @@
 
 export const BRAND_NAME = 'Origin.Co'
 export const BRAND_TAGLINE = "Not Just A Community. It's Our Origin."
-export const WHATSAPP_LINK = 'https://wa.me/919999999999?text=Hey%2C%20I%27m%20interested%20in%20joining%20Origin%20Creator%20Community!'
-export const WHATSAPP_BRAND_LINK = 'https://wa.me/919999999999?text=Hi%2C%20I%27d%20like%20to%20partner%20with%20Origin%20for%20a%20brand%20collaboration.'
-export const INSTAGRAM_LINK = 'https://instagram.com/origin.co'
+export const INSTAGRAM_LINK = 'https://www.instagram.com/origincommune?stkn=MTMzbmRhYW85aWo4OQ%3D%3D'
+export const REDIRECT_LINK = 'https://www.instagram.com/origincommune?stkn=MTMzbmRhYW85aWo4OQ%3D%3D'
+export const WHATSAPP_LINK = 'https://www.instagram.com/origincommune?stkn=MTMzbmRhYW85aWo4OQ%3D%3D'
+export const WHATSAPP_BRAND_LINK = 'https://www.instagram.com/origincommune?stkn=MTMzbmRhYW85aWo4OQ%3D%3D'
 export const LINKEDIN_LINK = 'https://linkedin.com/company/origin-co'
 
 export const NAV_LINKS = [
@@ -310,7 +311,7 @@ export const FOUNDERS = [
     ],
     socialLinks: [
       { label: '@piyuush_16', href: 'https://instagram.com/piyuush_16', primary: true },
-      { label: '@origincommune', href: 'https://instagram.com/origincommune', primary: false },
+      { label: '@origincommune', href: 'https://www.instagram.com/origincommune?stkn=MTMzbmRhYW85aWo4OQ%3D%3D', primary: false },
     ],
   },
   {
@@ -321,7 +322,7 @@ export const FOUNDERS = [
     badgeClass: 'bg-violet-500/25 text-violet-300 border-violet-500/40',
     tagline: 'Community & Creator Lead',
     handle: '@sonakshidoshi5',
-    instagram: 'https://instagram.com/sonakshidoshi5',
+    instagram: 'https://www.instagram.com/sonakshidoshi5',
     image: '/images/sonakshi-doshi.jpg',
     imageAlt: 'Sonakshi Doshi — Co-Founder of Origin',
     eyebrow: 'Creator & Community Lead',
@@ -338,8 +339,8 @@ export const FOUNDERS = [
       { title: 'Creative Direction', description: 'Curating dynamic workshops, experiential events, and impactful storytelling.' },
     ],
     socialLinks: [
-      { label: '@sonakshidoshi5', href: 'https://instagram.com/sonakshidoshi5', primary: true },
-      { label: '@origincommune', href: 'https://instagram.com/origincommune', primary: false },
+      { label: '@sonakshidoshi5', href: 'https://www.instagram.com/sonakshidoshi5', primary: true },
+      { label: '@origincommune', href: 'https://www.instagram.com/origincommune?stkn=MTMzbmRhYW85aWo4OQ%3D%3D', primary: false },
     ],
   },
 ]

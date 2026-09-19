@@ -7,6 +7,7 @@ import CursorGlow from '@/components/ui/CursorGlow'
 import ScrollIndicator from '@/components/ui/ScrollIndicator'
 import MobileFallback from '@/components/three/MobileFallback'
 import ErrorBoundary from '@/components/ui/ErrorBoundary'
+import { INSTAGRAM_LINK } from '@/lib/constants'
 
 const TorusScene = dynamic(() => import('@/components/three/TorusScene'), {
   ssr: false,
@@ -130,7 +131,7 @@ export default function HeroSection() {
             transition={{ duration: 0.7, delay: 1.1 }}
           >
             <a
-              href="https://wa.me/919999999999"
+              href={INSTAGRAM_LINK}
               target="_blank"
               rel="noopener noreferrer"
               id="hero-creator-cta"

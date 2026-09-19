@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { WHATSAPP_LINK } from '@/lib/constants'
+import { INSTAGRAM_LINK } from '@/lib/constants'
 import OriginLogo from './OriginLogo'
 
 export default function MobileToast() {
@@ -81,7 +81,7 @@ export default function MobileToast() {
               </a>
 
               <a
-                href={WHATSAPP_LINK}
+                href={INSTAGRAM_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
                 id="mobile-toast-cta"
