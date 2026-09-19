@@ -3,8 +3,9 @@
 export const BRAND_NAME = 'Origin.Co'
 export const BRAND_TAGLINE = "Not Just A Community. It's Our Origin."
 export const INSTAGRAM_LINK = 'https://www.instagram.com/origincommune?stkn=MTMzbmRhYW85aWo4OQ%3D%3D'
-export const REDIRECT_LINK = 'https://www.instagram.com/origincommune?stkn=MTMzbmRhYW85aWo4OQ%3D%3D'
-export const WHATSAPP_LINK = 'https://www.instagram.com/origincommune?stkn=MTMzbmRhYW85aWo4OQ%3D%3D'
+export const REDIRECT_LINK = 'https://chat.whatsapp.com/DkhJKpBVa4l0SdY8PRP3Rh'
+export const WHATSAPP_LINK = 'https://chat.whatsapp.com/DkhJKpBVa4l0SdY8PRP3Rh'
+export const WHATSAPP_COMMUNITY_LINK = 'https://chat.whatsapp.com/DkhJKpBVa4l0SdY8PRP3Rh'
 export const WHATSAPP_BRAND_LINK = 'https://www.instagram.com/origincommune?stkn=MTMzbmRhYW85aWo4OQ%3D%3D'
 export const LINKEDIN_LINK = 'https://linkedin.com/company/origin-co'
 

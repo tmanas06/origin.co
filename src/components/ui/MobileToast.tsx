@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { INSTAGRAM_LINK } from '@/lib/constants'
 import OriginLogo from './OriginLogo'
+import CommunityDropdown from './CommunityDropdown'
 
 export default function MobileToast() {
   const [showToast, setShowToast] = useState(false)
@@ -80,17 +80,13 @@ export default function MobileToast() {
                 Events
               </a>
 
-              <a
-                href={INSTAGRAM_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                id="mobile-toast-cta"
-                className="px-4 py-1.5 rounded-full font-body font-semibold text-xs tracking-wide uppercase
-                  bg-gradient-to-r from-violet-600 to-purple-500 text-white shadow-glow-violet flex items-center gap-1"
-              >
-                <span>Join</span>
-                <span className="text-white/80">↗</span>
-              </a>
+              <CommunityDropdown
+                id="mobile-toast-community"
+                buttonText="Join"
+                variant="toast"
+                direction="up"
+                align="right"
+              />
 
               {/* Close / Dismiss */}
               <button

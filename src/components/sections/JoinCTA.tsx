@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import CursorGlow from '@/components/ui/CursorGlow'
-import { INSTAGRAM_LINK } from '@/lib/constants'
+import { INSTAGRAM_LINK, WHATSAPP_LINK } from '@/lib/constants'
 
 export default function JoinCTA() {
   return (
@@ -64,7 +64,7 @@ export default function JoinCTA() {
           transition={{ duration: 0.7, delay: 0.35 }}
         >
           <a
-            href={INSTAGRAM_LINK}
+            href={WHATSAPP_LINK}
             target="_blank"
             rel="noopener noreferrer"
             id="join-creator-cta"
@@ -100,7 +100,7 @@ export default function JoinCTA() {
           viewport={{ once: true }}
           transition={{ delay: 0.6 }}
         >
-          Mumbai, India · Instagram community · No algorithm required
+          Mumbai, India · WhatsApp community · No algorithm required
         </motion.p>
       </div>
     </section>

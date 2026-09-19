@@ -2,8 +2,9 @@
 
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import { NAV_LINKS, INSTAGRAM_LINK } from '@/lib/constants'
+import { NAV_LINKS } from '@/lib/constants'
 import OriginLogo from '@/components/ui/OriginLogo'
+import CommunityDropdown from '@/components/ui/CommunityDropdown'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -76,17 +77,7 @@ export default function Navbar() {
 
         {/* CTA */}
         <div className="hidden md:flex items-center gap-3">
-          <a
-            href={INSTAGRAM_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            id="nav-cta"
-            className="px-5 py-2.5 rounded-full font-body font-semibold text-sm tracking-wide uppercase
-              bg-gradient-to-r from-violet-600 to-purple-500 text-white
-              hover:shadow-glow-violet transition-all duration-300 hover:scale-105"
-          >
-            Join Community
-          </a>
+          <CommunityDropdown id="nav-cta" />
         </div>
 
         {/* Mobile menu toggle */}
@@ -128,15 +119,13 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <a
-            href={INSTAGRAM_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-3 text-center py-3.5 rounded-full font-body font-semibold text-sm uppercase
-              bg-gradient-to-r from-violet-600 to-purple-500 text-white shadow-glow-violet"
-          >
-            Join Community ↗
-          </a>
+          <div className="pt-2 border-t border-white/5">
+            <CommunityDropdown
+              mobile
+              id="nav-mobile-community"
+              onSelect={() => setMenuOpen(false)}
+            />
+          </div>
         </div>
       </motion.div>
     </motion.header>
