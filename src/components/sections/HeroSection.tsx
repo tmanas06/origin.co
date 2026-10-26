@@ -163,7 +163,7 @@ export default function HeroSection() {
             {[
               { value: '200+', label: 'Creators' },
               { value: '30+', label: 'Events' },
-              { value: '15+', label: 'Brand Partners' },
+              { value: '25+', label: 'Brand Partners' },
             ].map((s) => (
               <div key={s.label} className="flex flex-col">
                 <span className="text-xl sm:text-2xl font-black font-display gradient-text-purple">{s.value}</span>

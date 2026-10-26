@@ -21,7 +21,7 @@ export const STATS = [
   { value: 50000, suffix: '+', label: 'Creator Followers', decimals: 0 },
   { value: 30, suffix: '+', label: 'Events Hosted', decimals: 0 },
   { value: 200, suffix: '+', label: 'Creators Onboarded', decimals: 0 },
-  { value: 15, suffix: '+', label: 'Brand Partners', decimals: 0 },
+  { value: 25, suffix: '+', label: 'Brand Partners', decimals: 0 },
 ]
 
 export const EVENTS = [
@@ -89,6 +89,11 @@ export const BRANDS = [
   { name: 'The Kraft Studio' },
   { name: 'My Oh My Bombay' },
   { name: 'Jams n Vibe' },
+  { name: 'the.unwind.club' },
+  { name: 'Raas Rang' },
+  { name: 'Crestcalipercoffee' },
+  { name: 'Carma Packs' },
+  { name: 'Kinks Speciality Cafe' },
 ]
 
 export const CASE_STUDIES = [
@@ -237,6 +242,41 @@ export const CASE_STUDIES = [
     description: 'Acoustic jam sundowners, indie music creator collaborations, and underground live music community sessions.',
     stat: '890K',
     statLabel: 'Impressions',
+    creators: 9,
+  },
+  {
+    brand: 'the.unwind.club',
+    description: 'Community unwind mixers, creative reset workshops, and weekend social gathering takeovers across Mumbai.',
+    stat: '720K',
+    statLabel: 'Community Reach',
+    creators: 7,
+  },
+  {
+    brand: 'Raas Rang',
+    description: 'Festive cultural celebrations, high-energy Navratri garba nights, and ethnic fashion creator styling campaigns.',
+    stat: '1.9M',
+    statLabel: 'Video Views',
+    creators: 11,
+  },
+  {
+    brand: 'Crestcalipercoffee',
+    description: 'Artisanal specialty coffee tastings, barista creator takeovers, and morning brew storytelling across Mumbai caffeine enthusiasts.',
+    stat: '640K',
+    statLabel: 'Impressions',
+    creators: 6,
+  },
+  {
+    brand: 'Carma Packs',
+    description: 'Everyday carry aesthetics, creator unboxings, and sustainable packaging design showcases across design & lifestyle creators.',
+    stat: '850K',
+    statLabel: 'Social Reach',
+    creators: 8,
+  },
+  {
+    brand: 'Kinks Speciality Cafe',
+    description: 'Aesthetic cafe culture reels, specialty brew & culinary reviews, and exclusive creator sundowner meetups.',
+    stat: '1.1M',
+    statLabel: 'Footfall Reach',
     creators: 9,
   },
 ]
