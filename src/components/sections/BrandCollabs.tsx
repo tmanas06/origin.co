@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Marquee from '@/components/ui/Marquee'
 import GlassCard from '@/components/ui/GlassCard'
+import OriginLogo from '@/components/ui/OriginLogo'
 import { BRANDS, CASE_STUDIES } from '@/lib/constants'
 
 // Brand logo as styled text (since SVGs are placeholders)
@@ -97,16 +98,14 @@ export default function BrandCollabs() {
                   transition={{ duration: 0.4, delay: i < INITIAL_CARD_COUNT ? i * 0.08 : (i - INITIAL_CARD_COUNT) * 0.03 }}
                 >
                   <GlassCard className="p-8 flex flex-col gap-6 h-full hover:border-purple-500/40 hover:shadow-purple-950/20 transition-all duration-300">
-                    {/* Brand name */}
-                    <div className="flex items-start justify-between">
+                    {/* Brand name & Origin Logo */}
+                    <div className="flex items-start justify-between gap-4">
                       <div>
                         <span className="text-xs text-purple-400 font-body tracking-[0.2em] uppercase">Case Study</span>
                         <h3 className="font-display text-3xl font-black uppercase text-offwhite mt-1">{cs.brand}</h3>
                       </div>
-                      {/* Stat callout */}
-                      <div className="text-right">
-                        <div className="font-display text-4xl font-black gradient-text-purple">{cs.stat}</div>
-                        <div className="text-xs text-offwhite/50 font-body tracking-wide uppercase">{cs.statLabel}</div>
+                      <div className="flex-shrink-0 pt-1">
+                        <OriginLogo size={24} textClassName="text-xl" />
                       </div>
                     </div>
 

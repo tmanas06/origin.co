@@ -3,12 +3,16 @@
 interface OriginLogoProps {
   size?: number
   showTagline?: boolean
+  showText?: boolean
+  textClassName?: string
   className?: string
 }
 
 export default function OriginLogo({
   size = 36,
   showTagline = false,
+  showText = true,
+  textClassName = '',
   className = '',
 }: OriginLogoProps) {
   return (
@@ -47,16 +51,18 @@ export default function OriginLogo({
       </svg>
 
       {/* Brand Typography matching official poster */}
-      <div className="flex flex-col justify-center">
-        <span className="font-display text-2xl font-black lowercase tracking-tight text-white leading-none">
-          origin<span className="text-purple-400">.</span>
-        </span>
-        {showTagline && (
-          <span className="text-[9px] font-body tracking-[0.25em] uppercase text-offwhite/40 mt-1">
-            Community • Creative • Connection
+      {showText && (
+        <div className="flex flex-col justify-center">
+          <span className={`font-display font-black lowercase tracking-tight text-white leading-none ${textClassName || 'text-2xl'}`}>
+            origin<span className="text-purple-400">.</span>
           </span>
-        )}
-      </div>
+          {showTagline && (
+            <span className="text-[9px] font-body tracking-[0.25em] uppercase text-offwhite/40 mt-1">
+              Community • Creative • Connection
+            </span>
+          )}
+        </div>
+      )}
     </div>
   )
 }

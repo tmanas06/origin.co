@@ -94,6 +94,9 @@ export const BRANDS = [
   { name: 'Crestcalipercoffee' },
   { name: 'Carma Packs' },
   { name: 'Kinks Speciality Cafe' },
+  { name: 'Pinkvilla' },
+  { name: 'Chemist at Play' },
+  { name: 'Brewcasso' },
 ]
 
 export const CASE_STUDIES = [
@@ -278,6 +281,27 @@ export const CASE_STUDIES = [
     stat: '1.1M',
     statLabel: 'Footfall Reach',
     creators: 9,
+  },
+  {
+    brand: 'Pinkvilla',
+    description: 'High-reach entertainment red carpet coverage, viral celebrity interview reels, and lifestyle creator integrations across Bollywood pop-culture fans.',
+    stat: '4.8M',
+    statLabel: 'Video Views',
+    creators: 15,
+  },
+  {
+    brand: 'Chemist at Play',
+    description: "Science-backed skincare routines, ceramide benefit breakdowns, and authentic unboxing reviews across Mumbai's beauty and wellness creators.",
+    stat: '1.7M',
+    statLabel: 'Impressions',
+    creators: 10,
+  },
+  {
+    brand: 'Brewcasso',
+    description: 'Artisanal specialty coffee pairings, live painting and latte art community workshops, and aesthetic cafe culture content reels.',
+    stat: '850K',
+    statLabel: 'Footfall Reach',
+    creators: 7,
   },
 ]
 
